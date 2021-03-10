@@ -2,7 +2,7 @@
 
 * [Board Information](source/BoardInfo.md#list-of-sys-interface)
 * [WatchDog control](source/WatchDog.md#list-of-sys-interface)
-* [GPIO Access](source/GPIO.md#list-of-sys-interface)
+* [GPIO Access](source/GPIO.md#list-of-sys-interface-only-for-linux)
 * [Backlight Control](source/Backlight.md#list-of-sys-interface)
 * [I2C Control](source/i2c.md#how-to-use-in-linux) (Do not support the sys Interface. we use the standard i2c commands to access your devices)
 * [Smart FAN Control](source/SmartFan.md#list-of-sys-interface)
