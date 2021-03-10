@@ -13,6 +13,8 @@ Provide an interface to access I2C devices. Please refer to the Hardware User Ma
 
 #### How to use in Linux
 
+we won't support the sys interface to access i2c. To use the standard i2c command to access your i2c devices.
+
 After adl-bmc-i2c driver loaded, please use `i2cdetect` command to look for **ADLINK BMC I2C driver**. Then, you can use `i2c-tools` commands to access your devices.
 
    ![install4](i2c.assets/image-20200624145823777.png)
