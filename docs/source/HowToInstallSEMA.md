@@ -42,26 +42,6 @@ Running the installer which will be automatically installed SMBus driver, EAPI l
 
 ### Ubuntu Linux
 
-
-Before install sema, make i2c-i801 driver automatically be loaded.
-
-1. to remove it in the blacklist
-
-```
-sudo vim /etc/modprobe.d/blacklist.conf
-```
-
-​       please comment **#blacklist i2c_i801** as the below:
-
-![load_i2c_i801](HowToInstallSEMA.assets/load_i2c_i801.png)
-
-2. reboot your ubuntu system
-
-<br>
-
-
-Follow below instructions to build and install the SEMA utility on target machine.
-
 #### Prerequisites
 
 Install build-essential package to install all tools used along with make. Install git, hexer and i2c-tools.
@@ -120,4 +100,3 @@ echo pca9535 0x20 > /sys/bus/i2c/devices/i2c-12/new_device
 **Note**: here i2c-12 is used, since SMBus is located at bus 12. `0x20` is GPIO device slave address. Please refer the below screenshot to know the i2c bus number and GPIO device address.
 
 ![imag2](HowToInstallSEMA.assets/imag2.png)
-
