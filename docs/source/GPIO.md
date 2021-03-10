@@ -7,7 +7,7 @@
 
 
 
-#### List of sys Interface
+#### List of sys Interface ( only for Linux)
 
 * To export the GPIO pin: (N should replace with gpio chip base number)
 
