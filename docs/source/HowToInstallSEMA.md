@@ -1,4 +1,4 @@
-## [Windows 10 64Bit](source/HowToInstallSEMA.md#windows-10-64bit)
+ [Windows 10 64Bit](source/HowToInstallSEMA.md#windows-10-64bit)
 ## Ubuntu 20.04 LTS / Ubuntu 18.04 LTS
   * [how to install SEMA 4.0](source/HowToInstallSEMA.md#how-to-build-amp-install-sema-40)
   * [how to install GPIO Expander (PCA9535)](source/HowToInstallSEMA.md#how-to-install-io-expander-pca9535)
@@ -138,3 +138,6 @@ $ sudo echo pca9535 0x20 > /sys/bus/i2c/devices/i2c-0/new_device
 
    ![image-20210323104505689](HowToInstallSEMA.assets/image-20210323104505689.png)
 
+​     **Note** 
+
+​        in our case, the **gpiochip132** will be changed for the different platform
