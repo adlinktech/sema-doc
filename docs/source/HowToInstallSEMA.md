@@ -1,7 +1,3 @@
-## How to install on Windows & Linux
-
-
-
 * [Windows 10 64Bit](HowToInstallSEMA.md#windows-10-64bit)
 * Ubuntu 20.04 LTS / Ubuntu 18.04 LTS
   * [how to install SEMA 4.0](HowToInstallSEMA.md#how-to-build-amp-install-sema-40)
