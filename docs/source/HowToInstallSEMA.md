@@ -1,13 +1,13 @@
-* [Windows 10 64Bit](HowToInstallSEMA.md#windows-10-64bit)
-* Ubuntu 20.04 LTS / Ubuntu 18.04 LTS
-  * [how to install SEMA 4.0](HowToInstallSEMA.md#how-to-build-amp-install-sema-40)
-  * [how to install GPIO Expander (PCA9535)](HowToInstallSEMA.md#how-to-install-io-expander-pca9535)
+### [Windows 10 64Bit](source/HowToInstallSEMA.md#windows-10-64bit)
+### Ubuntu 20.04 LTS / Ubuntu 18.04 LTS
+  * [how to install SEMA 4.0](source/HowToInstallSEMA.md#how-to-build-amp-install-sema-40)
+  * [how to install GPIO Expander (PCA9535)](source/HowToInstallSEMA.md#how-to-install-io-expander-pca9535)
 
 
 
 <br> 
 
-## Windows 10 64Bit
+### Windows 10 64Bit
 
 Please go to [here](https://hq0epm0west0us0storage.blob.core.windows.net/public/SEMA%204.0.0_20200215.rar)  to download the Installer which contains:
 
@@ -38,7 +38,7 @@ Running the installer which will be automatically installed SMBus driver, EAPI l
 
 <br>
 
-## Ubuntu 20.04 LTS / Ubuntu 18.04 LTS
+### Ubuntu 20.04 LTS / Ubuntu 18.04 LTS
 
 #### Prerequisites
 
@@ -50,7 +50,7 @@ sudo apt install build-essential git hexer i2c-tools
 
 <br>
 
-### How to Build & Install SEMA 4.0
+#### How to Build & Install SEMA 4.0
 
 #### Build and Install
 
@@ -105,7 +105,7 @@ echo pca9535 0x20 > /sys/bus/i2c/devices/i2c-12/new_device
 
 <br>
 
-### How to Install I/O Expander (PCA9535)
+#### How to Install I/O Expander (PCA9535)
 
 1. To load PCA9535 driver
 
