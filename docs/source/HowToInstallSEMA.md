@@ -1,5 +1,5 @@
-### [Windows 10 64Bit](source/HowToInstallSEMA.md#windows-10-64bit)
-### Ubuntu 20.04 LTS / Ubuntu 18.04 LTS
+## [Windows 10 64Bit](source/HowToInstallSEMA.md#windows-10-64bit)
+## Ubuntu 20.04 LTS / Ubuntu 18.04 LTS
   * [how to install SEMA 4.0](source/HowToInstallSEMA.md#how-to-build-amp-install-sema-40)
   * [how to install GPIO Expander (PCA9535)](source/HowToInstallSEMA.md#how-to-install-io-expander-pca9535)
 
