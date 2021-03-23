@@ -1,13 +1,4 @@
- [Windows 10 64Bit](source/HowToInstallSEMA.md#windows-10-64bit)
-## Ubuntu 20.04 LTS / Ubuntu 18.04 LTS
-  * [how to install SEMA 4.0](source/HowToInstallSEMA.md#how-to-build-amp-install-sema-40)
-  * [how to install GPIO Expander (PCA9535)](source/HowToInstallSEMA.md#how-to-install-io-expander-pca9535)
-
-
-
-<br> 
-
-### Windows 10 64Bit
+## Windows 10 64Bit
 
 Please go to [here](https://hq0epm0west0us0storage.blob.core.windows.net/public/SEMA%204.0.0_20200215.rar)  to download the Installer which contains:
 
@@ -38,7 +29,7 @@ Running the installer which will be automatically installed SMBus driver, EAPI l
 
 <br>
 
-### Ubuntu 20.04 LTS / Ubuntu 18.04 LTS
+## Ubuntu 20.04 LTS / Ubuntu 18.04 LTS
 
 #### Prerequisites
 
