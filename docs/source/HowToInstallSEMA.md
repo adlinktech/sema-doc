@@ -1,15 +1,17 @@
-### How to install on Windows & Linux
+## How to install on Windows & Linux
 
 
 
 * [Windows 10 64Bit](source/HowToInstallSEMA.md#windows-10-64bit)
-* [Ubuntu Linux](source/HowToInstallSEMA.md#ubuntu-linux)
+* [Ubuntu 20.04 LTS / Ubuntu 18.04 LTS](source/HowToInstallSEMA.md#ubuntu-linux)
+  * [how to install SEMA 4.0]()
+  * [how to install GPIO Expander (PCA9535)]()
 
 
 
 <br> 
 
-### Windows 10 64Bit
+## Windows 10 64Bit
 
 Please go to [here](https://hq0epm0west0us0storage.blob.core.windows.net/public/SEMA%204.0.0_20200215.rar)  to download the Installer which contains:
 
@@ -40,7 +42,7 @@ Running the installer which will be automatically installed SMBus driver, EAPI l
 
 <br>
 
-### Ubuntu Linux
+## Ubuntu 20.04 LTS / Ubuntu 18.04 LTS
 
 #### Prerequisites
 
@@ -49,6 +51,10 @@ Install build-essential package to install all tools used along with make. Insta
 ```
 sudo apt install build-essential git hexer i2c-tools
 ```
+
+<br>
+
+### How to Build & Install SEMA 4.0
 
 #### Build and Install
 
@@ -80,7 +86,7 @@ sudo make install
 5. To load all of drivers
 
 ```
-sudo modprobe -a adl-bmc adl-bmc-boardinfo adl-bmc-vm adl-bmc-wdt adl-bmc-hwmon adl-bmc-nvmem adl-bmc-bklight adl-bmc-i2c gpio-pca953x
+sudo modprobe -a adl-bmc adl-bmc-boardinfo adl-bmc-vm adl-bmc-wdt adl-bmc-hwmon adl-bmc-nvmem adl-bmc-bklight adl-bmc-i2c 
 ```
 
    **Note:** after installed, these files will be located at the following path
@@ -99,4 +105,40 @@ echo pca9535 0x20 > /sys/bus/i2c/devices/i2c-12/new_device
 
 **Note**: here i2c-12 is used, since SMBus is located at bus 12. `0x20` is GPIO device slave address. Please refer the below screenshot to know the i2c bus number and GPIO device address.
 
-![imag2](HowToInstallSEMA.assets/imag2.png)
+
+
+<br>
+
+### How to Install I/O Expander (PCA9535)
+
+1. To load PCA9535 driver
+
+   ```
+   $ sudo modprobe -a gpio-pca953x
+   ```
+
+2. Please check the i2c bus number of SMBus CMI adapter driver with the below command:
+
+   ```
+   $ i2cdetect -l
+   ```
+
+   ![image-20210323103456374](HowToInstallSEMA.assets/image-20210323103456374.png)
+
+   **Note:** 
+
+   * In our case, the bus number is **i2c-0** 
+   * please contact ADLINK FAE if there is no CMI adapter driver
+
+   
+
+2. Run the below command to add PAC9535 under **i2c-0** bus
+
+```
+$ sudo echo pca9535 0x20 > /sys/bus/i2c/devices/i2c-0/new_device
+```
+
+3. Once successfully,  you can see the PAC9535 device is loaded as the below
+
+   ![image-20210323104505689](HowToInstallSEMA.assets/image-20210323104505689.png)
+
