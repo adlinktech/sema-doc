@@ -1,6 +1,6 @@
 ## Windows 10 64Bit
 
-Please go to [here](https://hq0epm0west0us0storage.blob.core.windows.net/public/SEMA%204.0.0_20200215.rar)  to download the Installer which contains:
+Please go to [here](https://hq0epm0west0us0storage.blob.core.windows.net/public/SEMA4.0/SEMA4.0.1_Win10_64bit_20200520.zip)  to download the Installer which contains:
 
 * SEMA EAPI and SMBus Driver
 * Command Line Interface Application
